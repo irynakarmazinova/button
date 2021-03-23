@@ -1,0 +1,169 @@
+/* =============================================== */
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+
+  overflow: hidden;
+  background-color: rgb(236, 150, 134);
+}
+
+.btn-twit {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  fill: rgb(96, 147, 96);
+
+  transition: transform 250ms linear;
+}
+
+.btn:hover .btn-twit,
+.btn:focus .btn-twit {
+  transform: translateY(-30px);
+}
+
+.btn-smart {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+
+  fill: rgb(104, 96, 147);
+
+  transform: translateY(calc(-50% + 35px));
+  transition: transform 250ms linear;
+}
+
+.btn:hover .btn-smart,
+.btn:focus .btn-smart {
+  transform: translateY(-50%);
+}
+
+/* ========================================= */
+.btn2 {
+  position: relative;
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+
+  background-color: rgb(229, 158, 145);
+
+  transition: background-color 250ms linear;
+}
+
+.btn2:focus,
+.btn2:hover {
+  background-color: rgb(148, 231, 231);
+}
+
+.btn2::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+
+  background-image: url(../images/person-black-18dp\ 1.svg);
+  background-size: contain;
+  transition: transform 250ms linear;
+}
+
+.btn2:hover::before {
+  transform: translateY(-35px);
+}
+
+.btn2::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 20px;
+
+  background-image: url(../images/person-black-18dp\ 1.svg);
+  background-size: contain;
+
+  transform: translateY(calc(-50% + 30px));
+  transition: transform 250ms linear;
+}
+
+.btn2:hover::after {
+  transform: translateY(-50%);
+}
+
+/* ================Репета видео урок==================== */
+
+/* .btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: #008080;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  background-size: contain;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::before {
+  margin-right: 5px;
+
+  background-image: url('../images/bird.svg');
+}
+
+.btn:hover::before,
+.btn:focus::before {
+  transform: translateY(-35px);
+}
+
+.btn::after {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  background-image: url('../images/cat.svg');
+
+  transform: translateY(calc(-50% + 35px));
+}
+
+.btn:hover::after,
+.btn:focus::after {
+  transform: translateY(-50%);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d87093;
+} */
